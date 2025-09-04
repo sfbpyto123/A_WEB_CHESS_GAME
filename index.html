@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="controls">
+            <label for="timer">Set Timer (minutes): </label>
+            <input type="number" id="timer" value="5" min="1">
+            <label for="difficulty">AI Difficulty:</label>
+            <select id="difficulty">
+                <option value="1">Easy</option>
+                <option value="2">Medium</option>
+                <option value="3">Hard</option>
+            </select>
+            <button id="start-game">Start Game</button>
+        </div>
+        <div class="timer">
+            <span id="player-timer">Player: 05:00</span>
+            <span id="ai-timer">AI: 05:00</span>
+        </div>
+        <div id="chessboard"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/1.0.0/chess.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chessboard.js/1.0.0/chessboard.min.js"></script>
+    <script src="stockfish.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
