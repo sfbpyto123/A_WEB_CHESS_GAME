@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+the game-container {
+    text-align: center;
+}
+
+#chessboard {
+    width: 400px;
+    margin: 20px auto;
+}
+
+.controls {
+    margin-bottom: 10px;
+}
+
+timer {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
